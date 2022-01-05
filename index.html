@@ -25,6 +25,30 @@
           ></textarea>
         </div>
         <div class="card-footer">
+            <div class="setting">
+                <label for="length">Password length</label>
+                <input type="number" id="length" min="8" max="128" value="20">
+            </div>
+
+            <div class="setting">
+                <label for="uppercase">Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="setting">
+                <label for="lowercase">Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="setting">
+                <label for="symbols">Include symbols</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+
+            <div class="setting">
+                <label for="numbers">Include numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
           <button id="generate" onclick="" class="btn">Generate Password</button> <!--need to add onclick event or maybe not??-->
         </div>
       </div>
