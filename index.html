@@ -27,7 +27,7 @@
         <div class="card-footer">
             <div class="setting">
                 <label for="length">Password length</label>
-                <input type="number" id="length" min="8" max="128" value="20">
+                <select id="length"></select>
             </div>
 
             <div class="setting">
@@ -49,10 +49,11 @@
                 <label for="numbers">Include numbers</label>
                 <input type="checkbox" id="numbers" checked>
             </div>
-          <button id="generate" onclick="" class="btn">Generate Password</button> <!--need to add onclick event or maybe not??-->
+          <button id="generate" class="btn">Generate Password</button> <!--need to add onclick event or maybe not??-->
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
