@@ -6,7 +6,7 @@ const upperArr = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 const lowerArr = "abcdefghijklmnopqrstuvwxyz";
 const numbersArr = "0123456789";
 const symbolsArr = '!@#$%^&*(){}[]=<>/;.';
-let fartCount = 0
+
 
 // writePassword() is the function by which we are generating the password and then displaying it.
 const writePassword = () => {
@@ -36,14 +36,9 @@ const writePassword = () => {
     
     let typesCount = hasUpper + hasLower + hasNumbers + hasSymbols
     
-    // if statement to ensure at least one character type has been chosen. Also, it trolls.
+    // if statement to ensure at least one character type has been chosen.
     if (typesCount === 0) {
-        fartCount++;
-        if ((fartCount % 3) === 0) {
-            var passwordText = document.querySelector("#password");
-            return passwordText.value = "iE4tF4rts"
-    }
-        return alert("Your password must have at least one character type. I might feel so inclined to give you the password iE4tF4rts if this keeps up.")
+        return alert("Your password must have at least one character type.")
     }
 
 
